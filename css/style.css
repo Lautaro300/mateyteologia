@@ -68,6 +68,27 @@ nav a:hover, nav a.active { color: var(--ink); }
 
 /* ── HERO ── */
 .hero {
+  background-image: url(../img/calvary_by_pietro_sassi-2048x1213.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(247, 245, 240, 0.45);
+  z-index: 0;
+}
+
+.hero-text, .hero-feature {
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
   max-width: 1200px; margin: 0 auto;
   padding: clamp(60px, 10vw, 120px) clamp(24px, 5vw, 80px) 80px;
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
@@ -75,13 +96,13 @@ nav a:hover, nav a.active { color: var(--ink); }
 }
 .hero-label {
   font-family: 'DM Mono', monospace; font-size: 0.65rem;
-  letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold);
+  letter-spacing: 0.25em; text-transform: uppercase; color: black;
   margin-bottom: 20px; display: flex; align-items: center; gap: 10px;
 }
 .hero-label::before { content: ''; display: inline-block; width: 30px; height: 1px; background: var(--gold); }
 .hero h1 { font-size: clamp(2.8rem, 5vw, 4.2rem); font-weight: 300; line-height: 1.1; margin-bottom: 24px; }
-.hero h1 em { font-style: italic; color: var(--ink-muted); }
-.hero-desc { font-size: 1.05rem; color: var(--ink-muted); max-width: 400px; margin-bottom: 36px; line-height: 1.8; }
+.hero h1 em { font-style: italic; color: black; }
+.hero-desc { font-size: 1.25rem; color: black; max-width: 400px; margin-bottom: 36px; line-height: 1.8; }
 
 .btn-primary {
   display: inline-block; background: var(--ink); color: var(--bg);
