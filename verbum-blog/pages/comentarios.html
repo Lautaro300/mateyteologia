@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comentarios Teológicos — Verbum</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header id="site-header">
+    <a class="logo" href="../index.html">Verb<span>·</span>um</a>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="estudios.html">Estudios</a>
+      <a href="comentarios.html" class="active">Comentarios</a>
+      <a href="acerca.html">Acerca</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="../index.html" onclick="toggleMenu()">Inicio</a>
+    <a href="estudios.html" onclick="toggleMenu()">Estudios</a>
+    <a href="comentarios.html" onclick="toggleMenu()">Comentarios</a>
+    <a href="acerca.html" onclick="toggleMenu()">Acerca</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="hero-label">Comentarios teológicos</div>
+    <h1>Reflexiones sobre<br/>la <em>doctrina cristiana</em></h1>
+  </div>
+
+  <div class="full-divider"></div>
+
+  <div class="posts-list" id="lista-comentarios">
+    <!-- Se carga desde posts.js -->
+  </div>
+
+  <footer>
+    <div class="footer-logo">Verb<span>·</span>um</div>
+    <div class="footer-links">
+      <a href="../index.html">Inicio</a>
+      <a href="estudios.html">Estudios</a>
+      <a href="comentarios.html">Comentarios</a>
+      <a href="acerca.html">Acerca</a>
+    </div>
+    <div class="footer-copy">© <span id="year"></span> Verbum · Todos los derechos reservados</div>
+  </footer>
+
+  <script src="../js/posts.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

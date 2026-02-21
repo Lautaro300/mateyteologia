@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acerca — Verbum</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header id="site-header">
+    <a class="logo" href="../index.html">Verb<span>·</span>um</a>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="estudios.html">Estudios</a>
+      <a href="comentarios.html">Comentarios</a>
+      <a href="acerca.html" class="active">Acerca</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="../index.html" onclick="toggleMenu()">Inicio</a>
+    <a href="estudios.html" onclick="toggleMenu()">Estudios</a>
+    <a href="comentarios.html" onclick="toggleMenu()">Comentarios</a>
+    <a href="acerca.html" onclick="toggleMenu()">Acerca</a>
+  </div>
+
+  <div class="about-layout">
+    <div class="hero-label" style="margin-bottom:20px;">Acerca de Verbum</div>
+    <h1>Un espacio para<br/>la <em>Palabra</em></h1>
+
+    <hr class="article-divider"/>
+
+    <p>Verbum nació del deseo de acercarse a la Escritura con seriedad, honestidad intelectual y profunda devoción. Creemos que la Biblia no solo merece ser leída, sino estudiada, meditada y aplicada con rigor y amor.</p>
+
+    <p>Este blog ofrece dos tipos de contenido: <strong>estudios bíblicos por libro</strong>, donde analizamos pasajes en su contexto histórico, literario y teológico; y <strong>comentarios teológicos</strong>, donde reflexionamos sobre las grandes doctrinas de la fe cristiana.</p>
+
+    <h2>Perspectiva</h2>
+    <p>Nos acercamos a la Escritura desde una perspectiva evangélica reformada, comprometidos con la autoridad e inerrancia de la Biblia, la gracia soberana de Dios y la centralidad de Cristo en toda la revelación divina.</p>
+
+    <h2>Para quién es este blog</h2>
+    <p>Verbum está pensado para pastores, estudiantes de teología, líderes de iglesia y cualquier creyente que desee crecer en el conocimiento de la Palabra. No asumimos conocimiento previo de hebreo o griego, pero tampoco evitamos la profundidad.</p>
+
+    <h2>Contacto</h2>
+    <p>¿Tienes preguntas, sugerencias o quieres colaborar? Escríbenos a <a href="mailto:contacto@verbum.com" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-light);">contacto@verbum.com</a></p>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Verb<span>·</span>um</div>
+    <div class="footer-links">
+      <a href="../index.html">Inicio</a>
+      <a href="estudios.html">Estudios</a>
+      <a href="comentarios.html">Comentarios</a>
+      <a href="acerca.html">Acerca</a>
+    </div>
+    <div class="footer-copy">© <span id="year"></span> Verbum · Todos los derechos reservados</div>
+  </footer>
+
+  <script src="../js/posts.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

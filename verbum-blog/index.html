@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verbum — Estudios Bíblicos</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header">
+    <a class="logo" href="index.html">Verb<span>·</span>um</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="estudios.html">Estudios</a>
+      <a href="comentarios.html">Comentarios</a>
+      <a href="acerca.html">Acerca</a>
+    </nav>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html" onclick="toggleMenu()">Inicio</a>
+    <a href="estudios.html" onclick="toggleMenu()">Estudios</a>
+    <a href="comentarios.html" onclick="toggleMenu()">Comentarios</a>
+    <a href="acerca.html" onclick="toggleMenu()">Acerca</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-label">Estudios · Teología · Palabra</div>
+      <h1>Profundidad en<br/>la <em>Escritura</em><br/>que transforma</h1>
+      <p class="hero-desc">Estudios bíblicos rigurosos y comentarios teológicos para quienes desean conocer la Palabra de Dios con seriedad y devoción.</p>
+      <a href="estudios.html" class="btn-primary">Explorar estudios</a>
+    </div>
+    <div class="hero-feature">
+      <div class="feature-cat">Estudio destacado</div>
+      <h2>El Sermón del Monte: Ética del Reino de Dios</h2>
+      <p>Un análisis del contexto histórico-cultural de Mateo 5–7 y su relevancia para la ética cristiana contemporánea.</p>
+      <div class="feature-meta">
+        <span>Mateo 5–7</span>
+        <span>·</span>
+        <span>18 min de lectura</span>
+        <span>·</span>
+        <a href="posts/sermon-del-monte.html" class="read-link">Leer estudio →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="full-divider"></div>
+
+  <!-- ENTRADAS RECIENTES -->
+  <div class="section-header">
+    <div class="section-title">Publicaciones recientes</div>
+    <a href="estudios.html" class="see-all">Ver todo →</a>
+  </div>
+
+  <div class="articles-grid" id="posts-grid">
+    <!-- Los posts se cargan dinámicamente desde posts.js -->
+  </div>
+
+  <!-- VERSÍCULO -->
+  <div class="verse-banner">
+    <blockquote>&#8220;Toda la Escritura es inspirada por Dios y útil para enseñar, para reprender, para corregir y para instruir en la justicia.&#8221;</blockquote>
+    <div class="verse-ref">2 Timoteo 3:16</div>
+  </div>
+
+  <!-- CATEGORÍAS -->
+  <div class="section-header">
+    <div class="section-title">Explorar por categoría</div>
+  </div>
+  <div class="categories-grid">
+    <a href="estudios.html" class="category-card">
+      <div class="cat-icon">📖</div>
+      <div class="cat-name">Estudios Bíblicos por Libro</div>
+      <div class="cat-desc">Análisis versículo a versículo, contexto histórico, estructura literaria y aplicación contemporánea.</div>
+      <div class="cat-count" id="count-estudios">— estudios publicados</div>
+    </a>
+    <a href="comentarios.html" class="category-card">
+      <div class="cat-icon">✝</div>
+      <div class="cat-name">Comentarios Teológicos</div>
+      <div class="cat-desc">Reflexiones sobre doctrinas centrales: soteriología, cristología, pneumatología, escatología y más.</div>
+      <div class="cat-count" id="count-comentarios">— comentarios publicados</div>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Verb<span>·</span>um</div>
+    <div class="footer-links">
+      <a href="index.html">Inicio</a>
+      <a href="estudios.html">Estudios</a>
+      <a href="comentarios.html">Comentarios</a>
+      <a href="acerca.html">Acerca</a>
+    </div>
+    <div class="footer-copy">© <span id="year"></span> Verbum · Todos los derechos reservados</div>
+  </footer>
+
+  <script src="js/posts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
